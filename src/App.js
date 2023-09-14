@@ -1,15 +1,14 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import ArticleList from './ArticleList';
 import ArticleDetail from './ArticleDetail';
-import { Route, Routes } from 'react-router-dom';
-import GetData from './GetData';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" component={ArticleList} />
-        <Route path="/article/:title" component={ArticleDetail} />
+        <Route path="/" element={<ArticleList />} />
+        <Route path="/article/:title" element={<ArticleDetail />} />
       </Routes>
     </div>
   );

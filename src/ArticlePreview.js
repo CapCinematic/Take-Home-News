@@ -1,4 +1,3 @@
-import React from "react";
 import './ArticlePreview.css'
 import { Link } from "react-router-dom";
 
@@ -9,9 +8,9 @@ function ArticlePreview({ article }) {
       <h3 className="preview-h3">{article.title}</h3>
       <p className="preview-description">{article.description}</p>
       <p className="preview-publishedAt">{article.publishedAt}</p>
-      <Link to={`/articles/${article.title}`}>Read More</Link>
+      <Link to={`/article/${encodeURIComponent(article.title)}`}>Read More</Link>
     </div>
   );
 }
 
-export default ArticlePreview
+export default ArticlePreview;

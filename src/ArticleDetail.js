@@ -1,33 +1,32 @@
-import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import './ArticalDetail.css'
 
 function ArticleDetail() {
-  const { id } = useParams();
-  const [article, setArticle] = useState=('')
+  const { title } = useParams();
+  const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    const fetchArticle = async () => {
-      const response = await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2023-08-14&sortBy=publishedAt&apiKey=ef1451a6620e4bac88b89f17692b479c`)
+    async function fetchArticle() {
+      const response = await fetch(`https://newsapi.org/v2/everything?q=${encodeURIComponent(title)}&sortBy=publishedAt&apiKey=ef1451a6620e4bac88b89f17692b479c`);
       const data = await response.json();
-      console.log(data, "data")
-      const article = data.articles.find((a) => a.title === id)
-      setArticle(article)
+      setArticle(data.articles[0]);
     }
-    fetchArticle()
-  }, [id])
+
+    fetchArticle();
+  }, [title]);
 
   if (!article) {
-    return <div>Article One The Way...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
     <div>
-      <img src={article.urlToImage} alt={article.title} />
-      <h3>{article.title}</h3>
-      <p>By:{article.author}</p>
-      <p>{article.content}</p>
+      <h1 className="article-title">{article.title}</h1>
+      <img className="article-image" src={article.urlToImage} alt={article.title} />
+      <p className="article-content" >{article.content}</p>
     </div>
   );
 }
 
-export default ArticleDetail
+export default ArticleDetail;
