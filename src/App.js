@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ArticleList from './ArticleList';
+import ArticleDetail from './ArticleDetail';
 
 function App() {
 
