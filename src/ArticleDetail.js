@@ -1,6 +1,9 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function ArticleDetail({ article }) {
+  const { id } = useParams();
+  
   return (
     <div>
       {/* <img src={article.url} alt={article.title} /> */}
