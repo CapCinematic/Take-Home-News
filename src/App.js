@@ -1,4 +1,5 @@
 import './App.css';
+import './ArticlePreview.css'
 import { Route, Routes } from 'react-router-dom';
 import ArticleList from './ArticleList';
 import ArticleDetail from './ArticleDetail';

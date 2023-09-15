@@ -7,25 +7,40 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  color: #265947;
+}
+
+.article-preview:hover {
+  transition: background-color 0.5s ease;
+  background-color: tomato;
 }
 
 .preview-img {
   width: 100%;
   max-width: 400px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .preview-h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #000000;
+  text-shadow: 2px 2px 0 #ffffff;
 }
 
-.preview-h3 {
-  font-size: 16px;
+.preview-description {
+  font-size: 20px;
   margin-bottom: 5px;
+  color: #265947;
+  /* text-shadow: 1px 1px 0 #000; */
 }
 
 .preview-publishedAt{
   font-size: 14px;
-  color: #999;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
 }
+
+

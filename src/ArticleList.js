@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ArticlePreview from "./ArticlePreview";
+import "./ArticleList.css";
 
 function ArticleList({ category }) {
   const [articles, setArticles] = useState([]);

@@ -14,12 +14,12 @@ function Header({ handleClick }) {
         </Link>
       </div>
       <div className="header-right">
-        <button onClick={() => handleClick('technology')} className="header-button">
-          Technology
-        </button>
-        <button onClick={() => handleClick('business')} className="header-button">
-          Business
-        </button>
+      <button onClick={() => handleClick('technology')} className="btn btn-white btn-animated">
+  Technology
+</button>
+<button onClick={() => handleClick('sports')} className="btn btn-white btn-animated">
+  Business
+</button>
       </div>
     </header>
   );
