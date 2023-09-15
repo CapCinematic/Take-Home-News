@@ -21,10 +21,14 @@ function ArticleDetail() {
   }
 
   return (
-    <div>
+    <div className="artical-detail-box">
       <h1 className="article-title">{article.title}</h1>
+      <p className="article-author">By: {article.author}</p>
       <img className="article-image" src={article.urlToImage} alt={article.title} />
       <p className="article-content" >{article.content}</p>
+      <a className="article-url">Full story here: {article.url}</a>
+      <p className="article-publishedAt">{article.publishedAt}</p>
+      <p className="article-source">Source: {article.source.name}</p>
     </div>
   );
 }

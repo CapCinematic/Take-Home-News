@@ -1,0 +1,48 @@
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.article-preview {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-preview:hover {
+  transform: scale(1.05);
+}
+
+.article-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.article-description {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.article-link {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  text-decoration: none;
+  margin: 10px;
+  text-align: right;
+  transition: color 0.3s ease-in-out;
+}
+
+.article-link:hover {
+  color: #666;
+}
