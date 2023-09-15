@@ -7,7 +7,7 @@ function Header({ handleClick }) {
     <header className="header">
       <div className="header-left">
         <Link to="/" className="header-logo">
-          News App
+          Take Home News
         </Link>
         <Link to="/" className="header-link">
           Home

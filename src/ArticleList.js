@@ -16,7 +16,7 @@ function ArticleList({ category }) {
           "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=ef1451a6620e4bac88b89f17692b479c";
       } else {
         url =
-          "https://newsapi.org/v2/everything?q=tesla&from=2023-08-14&sortBy=publishedAt&apiKey=ef1451a6620e4bac88b89f17692b479c";
+          "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=ef1451a6620e4bac88b89f17692b479c";
       }
       const response = await fetch(url);
       const data = await response.json();
