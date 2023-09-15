@@ -30,9 +30,7 @@ function ArticleList({ category }) {
   return (
     <div>
       {articles.map((article) => (
-        <Link key={article.title} to={`/article/${article.title}`}>
-          <ArticlePreview article={article} />
-        </Link>
+          <ArticlePreview key={article.title} article={article} />
       ))}
     </div>
   );

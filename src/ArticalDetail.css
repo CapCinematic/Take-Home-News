@@ -1,16 +1,41 @@
-.article-image {
-  width: 100%;
-  height: auto;
+.artical-detail-box {
+  background-color: #dafdff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
-.article-title {
+.artical-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article-image{
+  border-radius: 10px;
+  width: 50%;
+  margin: 10px;
+}
+
+.artical-title {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.artical-detail p {
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.article-content {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.artical-detail a {
+  color: #0077ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.artical-detail a:hover {
+  text-decoration: underline;
 }

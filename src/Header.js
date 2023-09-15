@@ -17,7 +17,7 @@ function Header({ handleClick }) {
       <button onClick={() => handleClick('technology')} className="btn btn-white btn-animated">
   Technology
 </button>
-<button onClick={() => handleClick('sports')} className="btn btn-white btn-animated">
+<button onClick={() => handleClick('business')} className="btn btn-white btn-animated">
   Business
 </button>
       </div>
